@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public static final int CAPACITY = 12;
-    public static final int MINUS_ONE = -1;
+    public static final int DEFAULT = -1;
     public static final int EMPTY = -1;
     public static final int LAST_INDEX = 11;
 
@@ -27,13 +27,13 @@ public class DefaultCountingOutRhymer {
 
     protected int peek() {
         if (check())
-            return MINUS_ONE;
+            return DEFAULT;
         return numbers[total];
     }
 
     public int countOut() {
         if (check())
-            return MINUS_ONE;
+            return DEFAULT;
         return numbers[total--];
     }
 
