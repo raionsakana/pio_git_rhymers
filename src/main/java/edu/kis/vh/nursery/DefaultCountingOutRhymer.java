@@ -5,7 +5,6 @@ public class DefaultCountingOutRhymer {
     public static final int CAPACITY = 12;
     public static final int DEFAULT = -1;
     public static final int EMPTY = -1;
-    public static final int LAST_INDEX = 11;
 
 
     private final int[] numbers = new int[CAPACITY];
@@ -22,7 +21,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == LAST_INDEX;
+        return total == CAPACITY - 1;
     }
 
     protected int peek() {
