@@ -39,3 +39,15 @@ public class IntLinkedList {
 	}
 
 }
+
+class Node {
+
+	final int value;
+	Node prev, next;
+
+	Node(int i) {
+		value = i;
+	}
+
+}
+
