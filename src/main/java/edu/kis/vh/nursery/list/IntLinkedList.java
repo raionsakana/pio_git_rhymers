@@ -1,5 +1,6 @@
 package edu.kis.vh.nursery.list;
 
+// TODO: class is not used, can be deleted
 public class IntLinkedList {
 
 	public static final int EMPTY = -1;
@@ -19,7 +20,6 @@ public class IntLinkedList {
 	private boolean isEmpty() {
 		return last == null;
 	}
-
 	public boolean isFull() {
 		return false;
 	}
