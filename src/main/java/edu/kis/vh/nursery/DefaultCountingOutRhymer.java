@@ -18,7 +18,7 @@ public class DefaultCountingOutRhymer {
         return total == EMPTY;
     }
 
-    private boolean isFull() {
+    public boolean isFull() {
         return total == CAPACITY - 1;
     }
 
