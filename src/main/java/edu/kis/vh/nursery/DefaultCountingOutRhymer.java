@@ -33,7 +33,7 @@ public class DefaultCountingOutRhymer {
             return DEFAULT;
         return numbers[total--];
     }
-
+    // TODO: method not used, can be consider to delete
     public int getTotal() {
         return total;
     }
