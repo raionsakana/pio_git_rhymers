@@ -44,18 +44,18 @@ public class RhymersJUnitTest {
 	@Test
 	public void testCheckDefaultCountingOutRhymer() {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-		Assert.assertEquals(true, rhymer.check());
+		Assert.assertTrue (rhymer.check());
 		rhymer.countIn(TEST_VALUE);
-		Assert.assertEquals(false, rhymer.check());
+		Assert.assertTrue(rhymer.check());
 	}
 
 	@Test
 	public void testIsFullDefaultCountingOutRhymer() {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 		for (int i = 0; i < STACK_CAPACITY; i++, rhymer.countIn(TEST_VALUE))
-			Assert.assertEquals(false, rhymer.isFull());
+			Assert.assertFalse(rhymer.isFull());
 
-		Assert.assertEquals(true, rhymer.isFull());
+		Assert.assertFalse(rhymer.isFull());
 	}
 
 	@Test
