@@ -46,7 +46,7 @@ public class RhymersJUnitTest {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 		Assert.assertTrue (rhymer.check());
 		rhymer.countIn(TEST_VALUE);
-		Assert.assertTrue(rhymer.check());
+		Assert.assertFalse(rhymer.check());
 	}
 
 	@Test
