@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery;
 
 /**
- * Represents an employee
+ * Class HanoiRhymer extends DefaultCountingOutRhymer
  */
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
@@ -10,6 +10,21 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 	 * Number of recjection, used in countIn method
 	 */
 	private int totalRejected = 0;
+
+	/**
+	 *	Constructor HanoiRhymer.
+	 *	@param stack stack to use
+	 */
+
+	public HanoiRhymer(IntStackInterface stack) { super(stack); }
+
+	/**
+	 *	Deafult constructor HanoiRhymer.
+	 */
+	public HanoiRhymer() {
+		super();
+	}
+
 
 	/** getter method to return totalRejected value
 	 */

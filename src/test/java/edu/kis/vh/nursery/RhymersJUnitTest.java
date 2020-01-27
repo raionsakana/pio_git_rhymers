@@ -6,7 +6,7 @@ import org.junit.Test;
 public class RhymersJUnitTest {
 
 	private final int TEST_VALUE = 4;
-	private final int EMPTY_STACK_VALUE = -1;
+	private final int EMPTY_STACK_VALUE = 0;
 	private final int STACK_CAPACITY = 12;
 
 	@Test

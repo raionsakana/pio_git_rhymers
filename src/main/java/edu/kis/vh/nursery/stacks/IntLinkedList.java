@@ -1,13 +1,16 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.stacks;
+
+import edu.kis.vh.nursery.IntStackInterface;
 
 // TODO: class is not used, can be deleted
-public class IntLinkedList {
+public class IntLinkedList implements IntStackInterface {
 
-	public static final int EMPTY = -1;
+	public static final int EMPTY = 0;
 	private Node last;
 	int i;
 
-	public void push(int i) {
+    @Override
+	public void countIn(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
@@ -16,27 +19,37 @@ public class IntLinkedList {
 			last = last.next;
 		}
 	}
-
-	public boolean isEmpty() {
+    @Override
+	public boolean check() {
 		return last == null;
 	}
+
+    @Override
 	public boolean isFull() {
 		return false;
 	}
 
-	public int top() {
-		if (isEmpty())
+    @Override
+	public int peek() {
+		if (check())
 			return EMPTY;
 		return last.value;
 	}
 
-	public int pop() {
-		if (isEmpty())
+    @Override
+	public int countOut() {
+		if (check())
 			return EMPTY;
 		int ret = last.value;
 		last = last.prev;
 		return ret;
 	}
+
+    @Override
+    public int getTotal() {
+        return -1;
+    }
+
 
 }
 
